@@ -1,0 +1,11 @@
+1. put whole folder except photoshop and dist in python34/lib/site-packages.
+
+2. go to command prompt, navigate to that folder, and type (make sure PYTHONPATH environment variable is set to c:\python34):
+python setup.py py2exe
+
+3. make a game.bat file in the folder with the following (with quotes):
+"dist\game.exe"
+
+4. run bat_to_exe_converter. set batch file to game.bat, save as game.exe. Go to version information tab and change icon. compile.
+
+5. delete folder out of site-packages, or it will conflict with the original folder.
